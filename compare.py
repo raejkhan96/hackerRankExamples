@@ -16,15 +16,19 @@ import sys
 def compareTriplets(a, b):
     # Write your code here
     x = []
+    p1 = 0
+    p2 = 0
     for i in range(0,len(a)):
 
         if a[i]>b[i]:
-            x.append(1)
+            p1 = p1 + 1
         elif b[i]>a[i]:
-            x.append(1)
+            p2 = p2 + 1
         else:
             continue
 
+    x.append(p1)
+    x.append(p2)
     return x
                 
 
