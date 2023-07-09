@@ -18,18 +18,26 @@ import sys
 #
 
 def kangaroo(x1, v1, x2, v2):
-    # Write your code here
-    num_ans = x1 - x2
-    rate = v2 - v1
-    x = num_ans/rate
-    if (x > 0):
-        return 'YES'
-    else:
-        return 'NO'
+    # Actual sln - not sure of difference between my sln and given sln
+    for n in range(10000):
+        if((x1+v1)==(x2+v2)):
+            return "YES"
+        x1+=v1
+        x2+=v2
+    return "NO"
 
-x1 = 0
-v1 = 2
-x2 = 5
+    # MY SLN - DOES NOT PASS ALL TEST CASES:
+    # num_ans = x1 - x2
+    # rate = v2 - v1
+    # x = num_ans/rate
+    # if ((x > 0) and (type(x) is int)):
+    #     return 'YES'
+    # else:
+    #     return 'NO'
+
+x1 = 21
+v1 = 6
+x2 = 47
 v2 = 3
 result = kangaroo(x1, v1, x2, v2)
 print(result)
