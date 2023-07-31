@@ -13,20 +13,30 @@ import sys
 #  2. STRING path
 #
 
-def countingValleys(steps, path):
-    # Write your code here
-    ans = '_'
-    for letter in path:
-        if(letter == 'U'):
-            ans += '/'
-        else:
-            ans += '\\'
-    ans += '_'
-    return ans
+# need to figure out what to print on each layer and then concatenate them 
 
+# Misunderstood this problem, thought i had to draw valleys
+# Found solution online 
+
+# Complete the countingValleys function below.
+def countingValleys(n, s):
+    level = 0
+    num_valley = 0
+
+    for i in s:
+        if i == "U":
+            level = level+1
+        if i == "D":
+            level = level -1
+        if(level == 0 and i == "U"):
+            num_valley += 1
+    return num_valley
 
 
 steps = 8
 path = 'UDDDUDUU'
 result = countingValleys(steps, path)
 print(result)
+
+
+# print('_/\\' + "\n" + 3*" " + "\\")
