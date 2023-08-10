@@ -21,13 +21,16 @@ def designerPdfViewer(h, word):
     abc = "abcdefghijklmnopqrstuvwxyz"
     for i in word:
         if i in abc:
-            x = abc.index(i) + 1
+            x = abc.index(i) 
             arr.append(h[x])
-            print(x)
-    print(x)        
-    return 5
+            # print(x)
+    print(arr)
+    print(max(arr))
+    print(len(word))
+    return (max(arr) * len(word))
 
-h = 6
+
 h = [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 word = "torn"
 result = designerPdfViewer(h, word)
+print(result)
