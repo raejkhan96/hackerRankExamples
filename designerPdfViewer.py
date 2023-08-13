@@ -24,9 +24,9 @@ def designerPdfViewer(h, word):
             x = abc.index(i) 
             arr.append(h[x])
             # print(x)
-    print(arr)
-    print(max(arr))
-    print(len(word))
+    # print(arr)
+    # print(max(arr))
+    # print(len(word))
     return (max(arr) * len(word))
 
 
