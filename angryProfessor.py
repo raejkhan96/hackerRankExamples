@@ -19,5 +19,9 @@ def angryProfessor(k, a):
     # Write your code here
     # need to count the amount of values are before and at  0
     # if it matches k, return NO, else YES
+    for x in a:
+        if (x <= )
 
+k = 3
+a = [-2, -1, 0, 1, 2]
 result = angryProfessor(k, a)
