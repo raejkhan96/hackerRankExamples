@@ -17,5 +17,7 @@ import sys
 
 def angryProfessor(k, a):
     # Write your code here
+    # need to count the amount of values are before and at  0
+    # if it matches k, return NO, else YES
 
 result = angryProfessor(k, a)
