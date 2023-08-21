@@ -1,6 +1,6 @@
 #!/bin/python3
 
-import math
+import mathcd 
 import os
 import random
 import re
@@ -20,7 +20,8 @@ def angryProfessor(k, a):
     # need to count the amount of values are before and at  0
     # if it matches k, return NO, else YES
     for x in a:
-        if (x <= )
+        if (x <= 0)
+   
 
 k = 3
 a = [-2, -1, 0, 1, 2]
