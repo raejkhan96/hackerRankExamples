@@ -21,7 +21,7 @@ def pickingNumbers(a):
     # loop through the array ensure that each difference is less than 1
     # if the subarray length is less than 5 or at 5, stop
     # continue the process with next subarray till determined marker - 5th row from end
-     
+    # euguguyhgruydlulfui 
 
 
 
