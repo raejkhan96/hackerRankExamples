@@ -15,15 +15,16 @@ import sys
 
 def pickingNumbers(a):
     # Write your code here
-    # pseudo code - determine length of array, 
-    # find 5th element from behind as max length is 5 of sub array
-    # start from beginning or end
-    # loop through the array ensure that each difference is less than 1
-    # if the subarray length is less than 5 or at 5, stop
-    # continue the process with next subarray till determined marker - 5th row from end
-    # euguguyhgruydlulfui 
+    # go through array
+    # do a for loop within a for loop
+    # outer for loop should should be previous number
+    # inner for loop current number
+    # compare previous number with current number
+    # if difference is less than one, add to subarray
+    # if not, move on and start again
+    # then find max length
 
 
-
+a = [1,1,2,2,4,4,5,5,5]
 result = pickingNumbers(a)
 print(a)
