@@ -24,6 +24,14 @@ def pickingNumbers(a):
     # if not, move on and start again
     # then find max length
 
+    big_arr = []
+    for i in range(len(a) - 1):
+       current = i
+       next = a[i+1]
+       if (abs(next - current) >= 1):
+           
+    return 6 
+
 
 a = [1,1,2,2,4,4,5,5,5]
 result = pickingNumbers(a)
