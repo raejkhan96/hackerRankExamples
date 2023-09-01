@@ -27,13 +27,19 @@ def pickingNumbers(a):
     big_arr = []
     new_arr = []
     for i in range(len(a) - 1):
+        
         current = i
-        next = a[i+1]
-        if (abs(next - current) > 1):
+        next = i+1
+        print(a[current])
+        print(a[next])
+        if (abs(a[next] - a[current]) > 1):
+           new_arr.append(a[current])
            big_arr.append(new_arr)
            new_arr = []
+           print(new_arr)
+           print(a[next], a[current])
         else:
-            new_arr.append(current)
+            new_arr.append(a[current])
     return big_arr 
 
 
