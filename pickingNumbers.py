@@ -15,34 +15,42 @@ import sys
 
 def pickingNumbers(a):
     # Write your code here
-    # go through array
-    # do a for loop within a for loop
-    # outer for loop should should be previous number
-    # inner for loop current number
-    # compare previous number with current number
-    # if difference is less than one, add to subarray
-    # if not, move on and start again
-    # then find max length
-
+   
     big_arr = []
     new_arr = []
+
+    # print(a)
     for i in range(len(a) - 1):
         
         current = i
         next = i+1
-        print(a[current])
-        print(a[next])
+        # print("ROUND ", i)
+        # print(a[current])
+        # print(a[next])
+    
         if (abs(a[next] - a[current]) > 1):
-           new_arr.append(a[current])
-           big_arr.append(new_arr)
-           new_arr = []
-           print(new_arr)
-           print(a[next], a[current])
+            # print("BREAK")
+            new_arr.append(a[current])
+            big_arr.append(new_arr)
+            new_arr = []
+            # print(new_arr)
+            # print(a[next], a[current])
         else:
             new_arr.append(a[current])
-    return big_arr 
+            
+    new_arr.append(a[current])    
+    big_arr.append(new_arr)        
+    # print(big_arr)
 
+    # this gets you the largest sub array
+    largest_array = max(big_arr, key=len)
+    # print(largest_array)
+    # this gets you the largest array length
+    largest_array_len = len(largest_array)
+    # print(largest_array_len)
+    return largest_array_len
 
-a = [1,1,2,2,4,4,5,5,5]
+a = [4, 6, 5, 3, 3, 1]
+# a = [1,1,2,2,4,4,5,5,5]
 result = pickingNumbers(a)
 print(result)
