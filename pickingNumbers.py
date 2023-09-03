@@ -11,12 +11,17 @@ import sys
 #
 # The function is expected to return an INTEGER.
 # The function accepts INTEGER_ARRAY a as parameter.
-#
+# https://shounaklohokare.medium.com/picking-numbers-hackerrank-solution-in-python-bf64005c2e98
 
 from collections import Counter
 def pickingNumbers(a):
     countNums = Counter(a)
     maxnum=0        
+    print(countNums)
+    print(countNums[0])
+    print(countNums[1])
+    print(countNums[2])
+    print(countNums[3])
     for i in range(1, 100):
         maxnum = max(maxnum, countNums[i]+countNums[i+1])                      
         
