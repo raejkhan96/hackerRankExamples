@@ -13,6 +13,24 @@ import sys
 # The function accepts INTEGER_ARRAY a as parameter.
 # https://shounaklohokare.medium.com/picking-numbers-hackerrank-solution-in-python-bf64005c2e98
 
+# simpler code
+#   # Create a dictionary to count the frequency of each number in the array
+#     num_counts = Counter(arr)
+    
+#     # Initialize a variable to store the maximum subarray length
+#     max_length = 0
+    
+#     # Loop through numbers from 1 to 99
+#     for current_num in range(1, 100):
+#         # Check if the current number and the next number have enough elements to form a valid subarray
+#         current_length = num_counts[current_num] + num_counts[current_num + 1]
+        
+#         # Update the maximum subarray length if the current length is greater
+#         if current_length > max_length:
+#             max_length = current_length
+    
+#     return max_length
+
 from collections import Counter
 def pickingNumbers(a):
     countNums = Counter(a)
